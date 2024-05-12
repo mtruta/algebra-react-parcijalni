@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import UserInput from './UserInput';
+import UserInfo from './UserInfo';
 
 // https://api.github.com/users/
 
@@ -16,7 +17,7 @@ function App() {
 					setCurrentSearch(inputValue);
 				}}
 			/>
-			{currentSearch}
+			{currentSearch && <UserInfo userName={currentSearch} />}
 		</>
 	);
 }
