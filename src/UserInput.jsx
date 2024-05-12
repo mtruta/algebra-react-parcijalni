@@ -1,3 +1,5 @@
+import './App.css';
+
 function UserInput({ onComplete }) {
 	return (
 		<form
@@ -11,8 +13,9 @@ function UserInput({ onComplete }) {
 
 				console.log({ formElement, inputElement });
 			}}>
-			<input type='text' id='search' />
-			<button type='submit'>Search</button>
+			<input type='text' id='search' placeholder='e.g.facebook' />
+			<br />
+			<button type='submit'>GO!</button>
 		</form>
 	);
 }

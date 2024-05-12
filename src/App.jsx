@@ -11,7 +11,7 @@ function App() {
 	const [currentSearch, setCurrentSearch] = useState(null);
 	return (
 		<>
-			<h1>Search user</h1>
+			<p className='git-hub'>GitHUB username:</p>
 			<UserInput
 				onComplete={(inputValue) => {
 					setCurrentSearch(inputValue);
